@@ -81,6 +81,7 @@ const Navbar:React.FC = () => {
             </button>
             {Links.map((link) => (
               <Link
+                onClick={handleChange}
                 className="hover:text-blue-700 py-2 text-gray-900 hover:bg-slate-200 px-1 rounded-md"
                 key={link.id}
                 href={link.url}
